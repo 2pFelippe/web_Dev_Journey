@@ -25,7 +25,7 @@ footer {
 }
 
 
-  @media (min-width: 1600px){
+  @media (min-width: 1200px){
     .main{
       display: inline-block;
       width: 100%;
@@ -35,7 +35,6 @@ footer {
     .card{
       display: inline-block;
       max-width: 40%;
-      max-height: 190px;
       position: absolute;
     }
   
