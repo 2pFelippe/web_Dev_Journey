@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .grid-container{
+      width: 748px;
+      height: 748px;
+      background-color: black;
+      display: grid;
+      gap: 9px;
+    }
+
+    .up-container{
+      display: grid;
+      grid-template-columns: 320px auto;
+      grid-template-rows: 414px;
+      gap: 9px;
+    }
+
+    .red-square{
+      background-color: #E72F24;
+    }
+
+    .white-square{
+      background-color: #F0F1EC;
+    }
+
+    .down-container{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .white-down1{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .white-down2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .blue-down{
+      background-color: #004592;
+      margin-bottom: 10px;
+    }
+
+    .white-down3{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .white-down4{
+      background-color: #F0F1EC;
+    }
+
+    .yellow-down{
+      background-color: #F9D01E;
+    }
+
+    .black-down{
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="grid-container">
+      <div class="up-container">
+        <div class="red-square"></div>
+        <div class="white-square"></div>
+      </div>
+      <div class="down-container">
+        <div class="white-down1"></div>
+        <div class="white-down2"></div>
+        <div class="blue-down"></div>
+        <div class="white-down3"></div>
+        <div class="white-down4"></div>
+        <div class="yellow-down"></div>
+        <div class="black-down"></div>
+        
+      </div>
+   </div>
+</body>
+
+</html>
